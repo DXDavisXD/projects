@@ -1,0 +1,84 @@
+.images img {
+    display: none;
+    object-fit: cover;
+    max-height: 70vh;
+    max-width: 70vh;
+}
+
+.images {
+    margin: 20px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 30vh;
+}
+
+button {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(0, 1%, 77%);
+}
+
+button:hover {
+    animation-name: fade1;
+    animation-duration: .5s;
+    background-color: hsl(0, 1%, 59%);
+}
+
+button:active {
+    background-color: hsl(0, 1%, 40%);
+}
+
+img.displaySlide {
+    display: block;
+    border-radius: 20px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Agency FB';
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px yellow, -2px -2px 4px green;
+    ;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 2
+    }
+}
+
+@keyframes fade1 {
+    from {
+        background-color: hsl(0, 1%, 77%);
+    }
+
+    to {
+        background-color: hsl(0, 1%, 59%);
+    }
+}
